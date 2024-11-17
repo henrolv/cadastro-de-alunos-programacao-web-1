@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #253529;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 1px solid #8aa88a;
+}
+
+input::placeholder {
+  color: #253529;
+  font-size: 1.2rem;
+}
+
+input:focus {
+  border-color: #253529;
+  outline: none;
+}
+
+input[type="date"] {
+  padding: 8px;
+}
+
+.turno input {
+  display: inline-block;
+}
+
+.titulo {
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  color: #253529;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 40px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.formulario p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #253529;
+}
+
+#btn-salvar {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: 1px solid #63783d;
+  border-radius: 4px;
+  background: #8aa88a;
+  color: #253529;
+}
+
+#btn-salvar:hover {
+  background: #253529;
+  color: #8aa88a;
+}
+
+.btn-excluir {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #63783d;
+  border-radius: 4px;
+  background: #8aa88a;
+  color: #253529;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.turno label {
+  margin: 0;
+}
+.turno {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.tabela {
+  margin: 40px auto 0px auto;
+  min-width: 1000px;
+  width: auto;
+  border-collapse: collapse;
+}
+
+.tabela thead {
+  text-transform: uppercase;
+  background: #253529;
+  color: #fff;
+}
+
+thead,
+th,
+td {
+  border: 1px solid #000;
+  height: 50px;
+  padding: 0px 10px;
+}
+
+td {
+  padding: 0px 10px;
+  text-align: center;
+}
+
+tr {
+  height: 25px;
+}
+
+.tabela tbody tr:nth-child(even) {
+  background: #c2cfb4;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #253529;
+}
+
+.footer > img {
+  color: #253529;
+}

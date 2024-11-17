@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Alunos</title>
+  <link rel="icon" href="icones/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 class="titulo">Cadastro de Alunos</h1>
+
+  <form action="./" class="formulario" id="form">
+
+    <div>
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" placeholder="email@email.com">
+
+      <label for="telefone">Telefone:</label>
+      <input type="text" name="telefone" id="telefone" placeholder="(00) 0000-0000">
+    </div>
+
+    <div>
+      <label for="curso">Curso:</label>
+      <input type="text" name="curso" id="curso" placeholder="Ex: Engenharia de Software">
+
+      <label for="matricula">Matrícula:</label>
+      <input type="number" name="matricula" id="matricula" placeholder="0000000000">
+
+      <p>Turno:</p>
+
+      <div class="turno">
+        <input type="radio" name="turno" id="diurno" value="Diurno">
+        <label for="diurno">Diurno</label>
+      </div>
+
+      <div class="turno">
+        <input type="radio" name="turno" id="noturno" value="Noturno">
+        <label for="noturno">Noturno</label>
+      </div>
+
+      <label for="data">Data Inscrição:</label>
+      <input type="date" name="data" id="data">
+
+    </div>
+
+    <button id="btn-salvar">Salvar</button>
+
+  </form>
+
+  <table class="tabela" id="tabela">
+
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Cpf</th>
+        <th>E-mail</th>
+        <th>Telefone</th>
+        <th>Curso</th>
+        <th>Matrícula</th>
+        <th>Turno</th>
+        <th>Data</th>
+        <th>Excluir</th>
+      </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+
+  </table>
+
+  <footer class="footer">
+    <p>&copy; Eduardo Henrique, Alguns Direitos Reservados.</p>
+    <a href="https://github.com/henrolv/cadastro-de-alunos-programacao-web-1.git" target="_blank"><img src="icones/icons8-github.svg" alt="icone do github"></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
